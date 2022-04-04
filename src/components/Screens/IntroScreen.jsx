@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
             <div className="link-to-main">
                 <div className="title">
-                    <h2 className="title2">Blurb text</h2>
+                    <h2 className="title2">Listen Closely</h2>
                     <Link to='/music'>
                         <motion.button 
                         className="button"
@@ -30,7 +30,7 @@ const Hero = () => {
                             transition: { duration: 0.2 },
                           }}
                         whileTap={{ scale: 0.97 }}
-                        >Enjoy bliss and euphoric sounds</motion.button>
+                        >Enjoy blissful musical sounds</motion.button>
                     </Link>
                 </div>
             </div>
