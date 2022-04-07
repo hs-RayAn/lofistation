@@ -1,24 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@900&display=swap');
+ 
 
-html,body{
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-  }
-  
+
 .main-container{
     height: 100%;
     width: 100%;
     overflow: hidden;
-
 }
 
 .bg-video-container{
     height: 150%;
     width: 150%;
     position: absolute;
-    top: -35%;
     left: -20%;
+    top: -37%;
     overflow: hidden;
     z-index: -100;
 }
@@ -29,12 +24,11 @@ html,body{
     position: absolute;
     overflow: hidden;
     justify-content: center;
-    display: flex;
     align-items: center;
 }
 
 .title {
-    margin: 10% 100px 200px 65%;    
+    margin: 20% 100px 200px 70%;    
 }
 
 h2 {
@@ -43,7 +37,6 @@ h2 {
     letter-spacing: 4px;
     color: #183b73;
     background: none;
-    padding-left: 15%;
     font-weight: bolder;
 }
 
@@ -55,8 +48,16 @@ h2 {
     border-color: #183b73;
     font-weight: bolder;
     border-width: 2px;
-    letter-spacing: 1.3px;
+    letter-spacing: 5px;
     background: none;
     text-transform: uppercase;
     border-radius: 1000px;
+}
+
+.links {
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 1%;
+    margin-top: 1%;
+    z-index: 30;
 }
