@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 function App() {
 //imagine documenting your code lmao
   const [video, setVideo] = useState(`//https://www.youtube.com/watch?v=CiGHT4eS-oU?autoplay=1&mute=1&start=20`); //bg video link
-  const [playing, setPlaying] = useState(false); //initial state
+  const [playing, setPlaying] = useState(true); //initial state
   const [muted, setMuted] = useState(true);
   const [audio, setAudio] = useState("") //livestream link
   const [title, setTitle] = useState(""); //channel name
