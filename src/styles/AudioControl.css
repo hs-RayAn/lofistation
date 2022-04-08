@@ -1,0 +1,4 @@
+.hidden-player {
+    visibility: hidden;
+    z-index: -10;
+}
