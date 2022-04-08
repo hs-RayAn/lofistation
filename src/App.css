@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  text-decoration: none;
+}
+
 html,body{
   margin: 0px;
   padding: 0px;
@@ -21,4 +27,18 @@ html,body{
   left: -20%;
   overflow: hidden;
   z-index: -100;
+}
+
+.channel-info {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  bottom: 20%;
+  right: 15%;
+}
+
+.title-channel {
+  margin: 0px 10px 0px 10px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
 }

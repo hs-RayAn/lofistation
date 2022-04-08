@@ -17,7 +17,8 @@ const Hero = () => {
                       }}
                     whileTap={{ scale: 0.97 }}
                     >
-                        <FontAwesomeIcon icon={faYoutube} size='2x' color='#183b73'/>
+                        <FontAwesomeIcon icon={faYoutube} size='2x' color='#183b73'
+                        />
                     </motion.a>
             </motion.div>
             <div className="bg-video-container">
@@ -34,7 +35,7 @@ const Hero = () => {
             </div>
             <div className="link-to-main">
                 <div className="title">
-                    <h2 className="title2" style={{paddingLeft: '2.5%'}}>Sirenical</h2>
+                    <h2 className="title2" style={{paddingLeft: '2.2%'}}>Sirenical</h2>
                     <Link to='/music'>
                         <motion.button 
                         className="button"

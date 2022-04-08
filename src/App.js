@@ -4,6 +4,8 @@ import { useState } from 'react';
 import ReactPlayer from 'react-player';
 import AudioPlayer from './components/CurrStation/AudioPlayer';
 import Channel from './components/CurrStation/Channel';
+import Name from './components/Name';
+import { motion } from 'framer-motion'
 
 function App() {
 //imagine documenting your code lmao
@@ -15,12 +17,13 @@ function App() {
   const [ytLink, setYtLink] = useState(""); //channel link
 
   const Nothing = () => {
-    setTitle("Nothing");
+    setTitle("Ambient");
     setVideo('//https://www.youtube.com/watch?v=CiGHT4eS-oU?autoplay=1&mute=1&start=20');
-    setAudio('')
-    setPlaying(true)
-    setMuted(true)
-    setTitle()
+    setAudio('https://www.youtube.com/watch?v=wKvjW_dhj2U');
+    setPlaying(true);
+    setMuted(true);
+    setTitle('Ambient');
+    setYtLink('https://www.youtube.com/c/AmbientRenders');
   };
 
   const LofiGirl = () => {
@@ -34,7 +37,7 @@ function App() {
 
   const MellowBeat = () => {
     setTitle("Mellow Beat");
-    setVideo('//https://www.youtube.com/watch?v=WLXo_x3VzUU?autoplay=1&mute=1&start=0');
+    setVideo('//https://www.youtube.com/watch?v=WLXo_x3VzUU?autoplay=1&mute=1&start=0%end=120');
     setAudio(`https://www.youtube.com/watch?v=IUT1qAhMY4w`);
     setYtLink('https://www.youtube.com/c/MellowbeatSeekers');
     setPlaying(true);
@@ -50,11 +53,13 @@ function App() {
     setMuted(false);
   };
 
-  const Comrade = () => {
-    setTitle("Comrade!");
-    setVideo('//https://www.youtube.com/watch?v=y5zQTmkY7GI?autoplay=1&mute=1');
-    setAudio('https://www.youtube.com/watch?v=y5zQTmkY7GI');
-    setYtLink
+  const Spinnin = () => {
+    setTitle("Spinnin' Records");
+    setVideo('//https://www.youtube.com/watch?v=N65Jb683pXQ?autoplay=1&mute=1');
+    setAudio('https://www.youtube.com/watch?v=N65Jb683pXQ');
+    setYtLink('https://www.youtube.com/c/spinninrecords');
+    setPlaying(true);
+    setMuted(false);
   };
 
   return (
@@ -64,8 +69,8 @@ function App() {
         LofiGirl={LofiGirl}
         MellowBeat={MellowBeat}
         Chillhop={Chillhop}
+        Spinnin={Spinnin}
       />
-      
       <div class="div">
         <div className="bg-video">
           <ReactPlayer
@@ -82,10 +87,20 @@ function App() {
           className="hidden-player"
           sound={audio}
           play={playing}
-          
         />
       </div>
       <Channel />
+      <motion.div className="channel-info"
+      whileHover={{
+        scale: 1.02,
+        transition: { duration: 0.15 },
+      }}
+      whileTap={{ scale: 0.99 }}>
+        <Name
+          name={title}
+          link={ytLink}
+        />
+      </motion.div>
     </div>
   );
 }
