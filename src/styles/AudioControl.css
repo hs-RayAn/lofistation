@@ -2,3 +2,8 @@
     visibility: hidden;
     z-index: -10;
 }
+
+.pepyBtn {
+    display: absolute;
+    z-index: 120;
+}

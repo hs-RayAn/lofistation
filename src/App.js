@@ -3,9 +3,9 @@ import Station from './components/CurrStation/Station'
 import { useState } from 'react';
 import ReactPlayer from 'react-player';
 import AudioPlayer from './components/CurrStation/AudioPlayer';
-import Channel from './components/CurrStation/Channel';
 import Name from './components/Name';
 import { motion } from 'framer-motion'
+
 
 function App() {
 //imagine documenting your code lmao
@@ -15,6 +15,7 @@ function App() {
   const [audio, setAudio] = useState("") //livestream link
   const [title, setTitle] = useState(""); //channel name
   const [ytLink, setYtLink] = useState(""); //channel link
+
 
   const Nothing = () => {
     setTitle("Ambient");
@@ -84,12 +85,10 @@ function App() {
           />
         </div>
         <AudioPlayer
-          className="hidden-player"
           sound={audio}
           play={playing}
         />
       </div>
-      <Channel />
       <motion.div className="channel-info"
       whileHover={{
         scale: 1.02,
@@ -99,8 +98,10 @@ function App() {
         <Name
           name={title}
           link={ytLink}
+          muted={muted}
         />
       </motion.div>
+      
     </div>
   );
 }
