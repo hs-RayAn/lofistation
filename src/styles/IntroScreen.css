@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
  
 
 
@@ -30,11 +31,14 @@
 
 .title {
     margin: 20% 100px 200px 70%;    
+    display: absolute;
+    align-items: center;
+    justify-content: center;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 23px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 38px;
     letter-spacing: 4px;
     color: #183b73;
     background: none;
@@ -44,16 +48,16 @@ h2 {
 .button {
     min-width: 150px;
     min-height: 50px;
-    font-size: 17px;
+    font-size: 32px;
     color: #183b73;
     border-color: #183b73;
     font-weight: bolder;
-    border-width: 2px;
+    border-width: 2px;;
     letter-spacing: 5px;
     background: none;
     text-transform: uppercase;
     border-radius: 1000px;
-    font-family: 'Yuji Boku', serif;
+    font-family: 'Gamja Flower', cursive;
 }
 
 .links {

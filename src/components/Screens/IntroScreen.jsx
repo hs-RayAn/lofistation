@@ -35,8 +35,8 @@ const Hero = () => {
             </div>
             <div className="link-to-main">
                 <div className="title">
-                    <h2 className="title2" style={{paddingLeft: '2.2%'}}>Sirenical</h2>
-                    <Link to='/music'>
+                    <h2 className="title2" style={{paddingLeft: '0%'}}>Sirenical</h2>
+                    <div style={{paddingLeft: '4%'}}><Link to='/music'>
                         <motion.button 
                         className="button"
                         whileHover={{
@@ -46,6 +46,7 @@ const Hero = () => {
                         whileTap={{ scale: 0.97 }}
                         >주크박스</motion.button>
                     </Link>
+                    </div>
                 </div>
                 
             </div>
