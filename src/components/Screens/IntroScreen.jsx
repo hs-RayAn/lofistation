@@ -44,7 +44,7 @@ const Hero = () => {
                             transition: { duration: 0.2 },
                           }}
                         whileTap={{ scale: 0.97 }}
-                        >今ツズケル</motion.button>
+                        >주크박스</motion.button>
                     </Link>
                 </div>
                 
