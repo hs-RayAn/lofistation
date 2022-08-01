@@ -30,7 +30,7 @@ function App() {
   const LofiGirl = () => {
     setTitle("Lofi Girl")
     setVideo('//https://www.youtube.com/watch?v=T0LBTvde71w?autoplay=1&mute=1&start=0');
-    setAudio(`https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=LofiGirl`);
+    setAudio(`https://www.youtube.com/watch?v=jfKfPfyJRdk`);
     setYtLink("https://www.youtube.com/c/LofiGirl");
     setPlaying(true)
     setMuted(false)
